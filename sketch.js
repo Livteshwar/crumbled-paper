@@ -7,11 +7,6 @@ const Body = Matter.Body;
 var ball;
 var ground,leg1,leg2;
 
-function preload()
-{
-	
-}
-
 function setup() {
 	createCanvas(1200, 700);
 
@@ -50,15 +45,11 @@ function draw() {
   ground.show();
   leg1.show();
   leg2.show();
-
-  keyPressed();
-
-  drawSprites();
  
 }
 
 function keyPressed(){
-	if(keyDown(UP_ARROW)){
+	if(keyIsDown(UP_ARROW)){
 		Body.applyForce(ball, {x:0,y:0}, {x:0.05,y:-0.05});
 	}
 }
