@@ -50,7 +50,7 @@ function draw() {
 
 function keyPressed(){
 	if(keyIsDown(UP_ARROW)){
-		Body.applyForce(ball, {x:0,y:0}, {x:0.05,y:-0.05});
+		Body.applyForce(ball, {x:0,y:0}, {x:80,y:-30});
 	}
 }
 
